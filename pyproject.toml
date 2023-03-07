@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "repro-type-error-whylogs"
+version = "0.1.0"
+description = ""
+authors = ["Anthony Naddeo <anthony@whylabs.ai>"]
+readme = "README.md"
+packages = [{include = "repro_type_error_whylogs"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+whylogs = {version = "1.1.29.dev3", extras = ["embeddings", "whlabs"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
